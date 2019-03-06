@@ -13,17 +13,18 @@
       </div>
       <button class="addoption">Add</button>
     </div>
+    <div resultsection></div>
     <button>Go</button>
-    <div>
-      <img src="Empty.jpg" alt="Smiley face" height="222" width="222">
-    </div>
-    <div>
-      <form action="/action_page.php">
-  First name: <input placeholder="Write here" type="text" name="fname"><br>
-  Last name: <input placeholder="Write here" type="text" name="lname"><br>
-<button>Submit!</button>
-      </form>
-    </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+  $(function(){
+    $('.resultsection').hide
+    var add_option = function(){
+      $('.inputs').append('<input></input>')
+    }
+    $('.addoption').click(add_option)
+  })
+  </script>
   </body>
 
 </html>
